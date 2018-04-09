@@ -1,0 +1,69 @@
+en:
+  models: "模型列表"
+  add_model: "添加模型"
+  new_model: "新建模型"
+  edit_model: "编辑模型"
+  update_model: "更新模型"
+  add_entry: "添加条目"
+  new_entry: "新建条目"
+  edit_entry: "编辑条目"
+  update_entry: "更新条目"
+  no_fields_yet: "还没有字段。请用下面的表单添加第一个字段。"
+  select_field_type: "选择字段类型"
+  select_model: "选择模型"
+  collection_name_field_hint: "您可以通过这样：models.your_collection_name (ex., models.services)来访问你的模型集合"
+  description_field_hint: "可选字段。就填写一些描述以便他人能清楚这个模型的作用是什么"
+  label_field_hint: "请在下面填写至少一个字段。然后选择其中一个用于生成永久链接以及条目列表的展示。"
+  allow_creation_using_form_field_hint: "在网站上您能放置一个表单来允许创建模型的条目"
+  has_many_field_placeholder: "选择相关的对象..."
+  belongs_to_field_placeholder: "选择相关的对象..."
+  models_description: "模型列表这里就是您能动态的组织您的内容，比如新闻、博客、服务等等。"
+  create_first_model: "创建第一个模型"
+  entries_description: "这里您可以给相关的模型创建内容"
+  create_first_entry: "创建第一条条目"
+  field_types:
+    string: "字符串"
+    text: "文本"
+    checkbox: "勾选框"
+    date: "日期"
+    file: "文件"
+    has_many: "有多个"
+    belongs_to: "属于"
+  liquor_help:
+    variables:
+      models:
+        main_description: '变量models赋予了访问模型条目集合的能力。您可以利用模型集合名称 - "集合名称 (Liquor需要)"字段访问集合。例如，您通过"services"这个集合名称创建一个模型，然后您就能够像这样通过"for"标签循环集合:'
+    endpoints:
+      entries:
+        post:
+          main_description: 这个端点允许你通过表单提交模型的元素。例如，如果你有一个叫模型，这个模型有个集合名称posts (同时还有一个字段并且Liquor的名称为title)，那你就能创建一个表单，这个表单的action是/entries/posts，以及表单里面有一个文本框，它的name是entry[title]。
+          parameters:
+            entry: 每个参数的值都会保持到相关模型的条目字段里面去
+
+  activerecord:
+    models:
+      kms/model:
+        one: "模型"
+        few: "模型"
+        many: "模型"
+        other: "模型"
+      kms/entry:
+        one: "条目"
+        few: "条目"
+        many: "条目"
+        other: "条目"
+    attributes:
+      kms/model:
+        kms_model_name: "名称"
+        collection_name: "集合名称 (Liquor需要)"
+        description: "描述"
+        fields: "字段"
+        label_field: "标签字段 (用于生成URL/slug)"
+        allow_creation_using_form: "允许使用表单创建"
+      kms/field:
+        name: "名称"
+        liquor_name: "供Liquor的名称"
+        type: "类型"
+        required: "必填"
+      kms/entry:
+        slug: "Slug"
