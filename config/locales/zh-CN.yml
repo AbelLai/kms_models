@@ -14,6 +14,8 @@ zh-CN:
   collection_name_field_hint: "您可以通过这样：models.your_collection_name (ex., models.services)来访问你的模型集合"
   description_field_hint: "可选字段。就填写一些描述以便他人能清楚这个模型的作用是什么"
   label_field_hint: "请在下面填写至少一个字段。然后选择其中一个用于生成永久链接以及条目列表的展示。"
+  model_iteration_hint: 模型循环提示
+  model_iteration_hint_content: '在模版、页面、片段等，用以下代码例子循环你的模型条目:'
   allow_creation_using_form_field_hint: "在网站上您能放置一个表单来允许创建模型的条目"
   has_many_field_placeholder: "选择相关的对象..."
   belongs_to_field_placeholder: "选择相关的对象..."
