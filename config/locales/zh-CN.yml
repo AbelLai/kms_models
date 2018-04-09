@@ -64,7 +64,7 @@ zh-CN:
         allow_creation_using_form: "允许使用表单创建"
       kms/field:
         name: "名称"
-        liquor_name: "供Liquor的名称"
+        liquor_name: "供Liquor使用的名称"
         type: "类型"
         required: "必填"
       kms/entry:

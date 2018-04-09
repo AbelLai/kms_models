@@ -26,8 +26,8 @@
         .widget-content
           .widget-icon.pull-left
             i class="fa fa-clipboard"
-          .title Model iteration hint
-          .comment Use sample code below for iterating your model entries in Template, Page or Snippet:
+          .title = I18n.t(:model_iteration_hint)
+          .comment = I18n.t(:model_iteration_hint_content)
           br
           pre
             | {% for element in: models.{{ model.collection_name }} do: %}
